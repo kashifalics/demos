@@ -1,5 +1,6 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector("#primary-navigation");
+const header = document.querySelector(".site-header");
 
 function setMenuOpen(isOpen) {
   menuToggle.setAttribute("aria-expanded", String(isOpen));
@@ -13,7 +14,13 @@ menuToggle.addEventListener("click", () => {
 });
 
 navigation.addEventListener("click", (event) => {
-  if (event.target instanceof HTMLAnchorElement) {
+  if (event.target instanceof Element && event.target.closest("a")) {
+    setMenuOpen(false);
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (event.target instanceof Node && !header.contains(event.target)) {
     setMenuOpen(false);
   }
 });
@@ -25,7 +32,7 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-window.matchMedia("(min-width: 851px)").addEventListener("change", (event) => {
+window.matchMedia("(min-width: 961px)").addEventListener("change", (event) => {
   if (event.matches) {
     setMenuOpen(false);
   }
