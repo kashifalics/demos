@@ -28,5 +28,10 @@ You can also upload this static folder to another static-site host and use its s
 
 - Business details and listed services are based on the publicly accessible JAP Roofing website: [japroofingltd.info](https://www.japroofingltd.info/).
 - BlackTree LLC was supplied as a visual reference. The integrated browser could not reliably render its page, so this concept follows the requested broad construction-site direction without claiming to reproduce unverified visual details.
-- Optimized WebP images in `assets/` are concept imagery sourced from Unsplash, not JAP Roofing project photographs. Source photo IDs: `1635424824849-1b09bdcc55b1`, `1763665814965-b5c4b3547908`, `1518736346281-76873166a64a`, `1605450099279-533bd3ce379a`, and `1681049400158-0ff6249ac315`. Replace them with company-approved imagery before launch.
+- Optimized WebP images in `assets/` are concept imagery sourced from Unsplash, not JAP Roofing project photographs. Replace each image in place with approved company photography to retain the current layout and crops:
+  - `roofing-worker.webp` — homepage hero
+  - `roof-installation.webp` — roofing services
+  - `roof-tiles-detail.webp` — materials supply
+  - `slate-roofers.webp` and `terracotta-roof.webp` — gallery
+- Unsplash photo IDs, in the same order: `1635424824849-1b09bdcc55b1`, `1763665814965-b5c4b3547908`, `1518736346281-76873166a64a`, `1681049400158-0ff6249ac315`, and `1605450099279-533bd3ce379a`.
 - Confirm current telephone numbers, address, product availability, prices and service details directly with JAP Roofing before publishing. The enquiry links open the visitor's email application; there is no backend or form submission.
